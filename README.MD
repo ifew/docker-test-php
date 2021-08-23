@@ -1,2 +1,10 @@
-# Docker run this image
+# Sample PHP Docker image
+
+## Docker run this image
 docker run -d -p 80:80 -e MYSQL_DB_HOST=mysql -e MYSQL_DATABASE=test -e MYSQL_USER=root -e MYSQL_PASSWORD=1234 -e MYSQL_ROOT_PASSWORD=1234 --net db_network --name myweb docker.io/ifew/docker-test-php:7.3
+
+## Build image
+docker build . -t ifew/docker-test-php:7.3
+
+## Push image to repo
+docker push ifew/docker-test-php:7.3
