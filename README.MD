@@ -8,3 +8,13 @@ docker build . -t ifew/docker-test-php:7.3
 
 ## Push image to repo
 docker push ifew/docker-test-php:7.3
+
+## If want to push to AWS ECR
+### authentication
+aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin xxxx.dkr.ecr.ap-southeast-1.amazonaws.com/test
+
+### Tag your image
+docker tag ifew/docker-test-php:v1 xxxx.dkr.ecr.ap-southeast-1.amazonaws.com/test:v1
+
+### push your image
+docker push xxxx.dkr.ecr.ap-southeast-1.amazonaws.com/test:v1

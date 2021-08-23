@@ -1,4 +1,4 @@
-<h1>Welcome to Test</h1>
+<h1>Welcome to Test PHP Image</h1>
 <ul>
     <li><a href="phpinfo.php">PHP Info</a></li>
     <li><a href="getenv.php">Get Environment Variable</a></li>

@@ -3,10 +3,6 @@ $hostname = getenv('MYSQL_DB_HOST');
 $username = getenv('MYSQL_USER');
 $password = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
-$hostname = "mysql";
-$username = "ifew";
-$password = "1234";
-$dbname = "test";
 
 // Create connection
 $conn = new mysqli($hostname, $username, $password);
